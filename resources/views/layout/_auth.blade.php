@@ -1,0 +1,29 @@
+@extends('layout.master')
+
+@section('content')
+
+    <!--begin::Root-->
+    <div class="d-flex flex-column flex-root" id="kt_app_root">
+        <!--begin::Wrapper-->
+        <div class="d-flex flex-column flex-lg-row flex-column-fluid">
+            <!--begin::Body-->
+            <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1">
+                <!--begin::Form-->
+                <div class="d-flex flex-center flex-column flex-lg-row-fluid">
+                    <!--begin::Wrapper-->
+                    <div class="w-lg-500px p-10">
+                        <!--begin::Page-->
+                        {{ $slot }}
+                        <!--end::Page-->
+                    </div>
+                    <!--end::Wrapper-->
+                </div>
+                <!--end::Form-->
+            </div>
+            <!--end::Body-->
+        </div>
+        <!--end::Wrapper-->
+    </div>
+    <!--end::Root-->
+
+@endsection

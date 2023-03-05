@@ -1,0 +1,154 @@
+.dropzone {
+    min-height: auto;
+    padding: 1.5rem 1.75rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px dashed var(--kt-primary);
+    background-color: var(--kt-primary-light);
+    border-radius: 5px !important;
+}
+.dropzone .dz-message {
+    margin: 0;
+    display: flex;
+    text-align: left;
+}
+.dropzone .dz-preview {
+    border-radius: 5px !important;
+    margin: 0.75rem;
+}
+.dropzone .dz-preview .dz-image {
+    border-radius: 5px !important;
+    z-index: 1;
+}
+.dropzone .dz-preview.dz-file-preview .dz-image {
+    background: var(--kt-gray-200);
+}
+.dropzone .dz-success-mark,
+.dropzone .dz-error-mark {
+    margin-left: -divide(40px, 2) !important;
+    margin-top: -divide(40px, 2) !important;
+}
+.dropzone .dz-success-mark svg,
+.dropzone .dz-error-mark svg {
+    height: 40px !important;
+    width: 40px !important;
+}
+.dropzone .dz-remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.65rem;
+    width: 1.65rem;
+    font-size: 1rem;
+    text-indent: -9999px;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--kt-body-bg) !important;
+    box-shadow: var(--kt-box-shadow);
+    border-radius: 100%;
+    top: -divide(1.65rem, 2);
+    right: -divide(1.65rem, 2);
+}
+.dropzone .dz-remove:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    content: "";
+    mask-size: 40%;
+    -webkit-mask-size: 40%;
+}
+.dropzone .dz-error-message {
+    color: var(--kt-danger-inverse);
+    background: var(--kt-danger);
+}
+.dropzone.dropzone-queue {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    text-align: left;
+}
+.dropzone.dropzone-queue .dz-message {
+    display: none;
+}
+.dropzone.dropzone-queue .dropzone-panel .dropzone-upload,
+.dropzone.dropzone-queue .dropzone-panel .dropzone-remove-all {
+    display: none;
+}
+.dropzone.dropzone-queue .dropzone-item {
+    display: flex;
+    align-items: center;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--kt-gray-100);
+}
+.dropzone.dropzone-queue .dropzone-item .dropzone-file {
+    flex-grow: 1;
+}
+.dropzone.dropzone-queue .dropzone-item .dropzone-file .dropzone-filename {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--kt-gray-600);
+    text-overflow: ellipsis;
+    margin-right: 0.5rem;
+}
+.dropzone.dropzone-queue
+    .dropzone-item
+    .dropzone-file
+    .dropzone-filename:hover {
+    color: var(--kt-primary);
+}
+.dropzone.dropzone-queue .dropzone-item .dropzone-file .dropzone-error {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--kt-danger);
+    text-overflow: ellipsis;
+}
+.dropzone.dropzone-queue .dropzone-item .dropzone-progress {
+    width: 15%;
+}
+.dropzone.dropzone-queue .dropzone-item .dropzone-progress .progress {
+    height: 5px;
+}
+.dropzone.dropzone-queue .dropzone-item .dropzone-toolbar {
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.dropzone.dropzone-queue .dropzone-item .dropzone-toolbar .dropzone-start,
+.dropzone.dropzone-queue .dropzone-item .dropzone-toolbar .dropzone-cancel,
+.dropzone.dropzone-queue .dropzone-item .dropzone-toolbar .dropzone-delete {
+    height: 25px;
+    width: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.dropzone.dropzone-queue .dropzone-item .dropzone-toolbar .dropzone-start i,
+.dropzone.dropzone-queue .dropzone-item .dropzone-toolbar .dropzone-cancel i,
+.dropzone.dropzone-queue .dropzone-item .dropzone-toolbar .dropzone-delete i {
+    font-size: 0.8rem;
+    color: var(--kt-gray-600);
+}
+.dropzone.dropzone-queue
+    .dropzone-item
+    .dropzone-toolbar
+    .dropzone-start:hover
+    i,
+.dropzone.dropzone-queue
+    .dropzone-item
+    .dropzone-toolbar
+    .dropzone-cancel:hover
+    i,
+.dropzone.dropzone-queue
+    .dropzone-item
+    .dropzone-toolbar
+    .dropzone-delete:hover
+    i {
+    color: var(--kt-primary);
+}

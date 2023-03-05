@@ -1,0 +1,14 @@
+/var/www/html/glibc-build/dummy.o: /var/www/html/glibc-build/dummy.c \
+ ../include/stdc-predef.h /var/www/html/glibc-build/libc-modules.h \
+ ../include/libc-symbols.h /var/www/html/glibc-build/config.h \
+ ../sysdeps/generic/symbol-hacks.h
+
+../include/stdc-predef.h:
+
+/var/www/html/glibc-build/libc-modules.h:
+
+../include/libc-symbols.h:
+
+/var/www/html/glibc-build/config.h:
+
+../sysdeps/generic/symbol-hacks.h:
